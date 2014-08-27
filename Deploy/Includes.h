@@ -34,9 +34,7 @@ namespace DeployDriver
 			MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT),
 			(LPTSTR)&lpMsgBuf,
 			0, NULL);
-
 		// Display the error message and exit the process
-
 		lpDisplayBuf = (LPVOID)LocalAlloc(LMEM_ZEROINIT,
 			(lstrlen((LPCTSTR)lpMsgBuf) + lstrlen((LPCTSTR)lpszFunction) + 40) * sizeof(TCHAR));
 		StringCchPrintf((LPTSTR)lpDisplayBuf,
